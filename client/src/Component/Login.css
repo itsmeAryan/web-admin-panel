@@ -1,0 +1,145 @@
+/* // css */
+*{
+    /* overflow: hidden; */
+}
+.signUp-Container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* border: 1px solid orange; */
+    margin-bottom: 10px;
+}
+.signUpLeft,
+signUpright{
+    /* border: 1px solid red; */
+}
+/* left postion */
+.signUpLeft{
+    flex: 5.8;
+    display: flex;
+    height: 100%;
+}
+.leftbackgorund{
+    background-image: url('https://picsum.photos/200/300');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+.overlay::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(39,51,62,.6);
+    opacity: 1;
+    z-index: 0
+}
+.overlay.overlay-plus::after{
+    background-color: rgba(85,51,255,.8);
+
+}
+.hiiden{
+    display: none;
+}
+.overlay.overlay-plus.extra-overlay::after{
+    background-color: rgba(85,51,255,.8);
+
+
+}
+.leftContainer{
+    z-index: 11;
+    color: white;
+    width: 480px;
+    padding-top: 30px;
+    padding-left: 20px;
+    margin: auto;
+}
+.lineTag{
+    width: 100px;
+    height: 1px;
+    background-color: orange;
+    background-color: rgb(159, 145, 228);
+    margin-bottom: 20px;
+
+}
+/* right portion */
+.signUpRight{
+    flex: 4.1;
+    display: flex;
+    justify-content: center;
+}
+.signUp-container{
+    width: 490px;
+    /* border: 1px solid rgb(23, 236, 51); */
+    padding: 10px;
+    padding-top: 25px;
+    
+
+}
+
+/* breakpoint */
+
+@media (max-width:900px){
+    .signUpLeft,
+    .signUpRight{
+        flex: 5!important;
+    }
+    
+}
+@media (max-width:690px){
+    .signUp-Container{
+        flex-direction: column!important;
+        flex-wrap: nowrap;
+    }
+    .signUpLeft{
+        display: none;
+    }
+    .hiiden{
+        display: flex;
+    }
+    .makeStyles-ImgBox-72{
+        margin-bottom: 20px!important;
+    }
+    .makeStyles-Form-74{
+        margin-top: 20px!important;
+    }
+   
+}
+@media (max-width:500px) {
+    .signUpRight{
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .makeStyles-Form-74{
+        margin-top: 15px!important;
+        width: 300px!important;
+    }
+}
+@media (max-width:325px) {
+    .signUpRight{
+        padding: 0 20px;
+    }
+    .MuiTypography-h4{
+        font-size: 24px!important;
+    }
+    .makeStyles-ImgBox-72{
+        margin-bottom: 10px!important;
+    }
+    a{
+        font-size: 16px!important;
+    }
+    .makeStyles-Form-74{
+        margin-top: 20px!important;
+        width: 220px!important;
+    }
+}

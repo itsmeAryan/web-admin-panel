@@ -1,0 +1,106 @@
+.singleProduct{
+    flex: 4;
+    width: 100%;
+    border: 1px solid orange;
+    padding: 10px;
+}
+.productTitlecontainer{
+    display: flex;
+    align-items: center;justify-content: space-between;
+
+}
+.productBtn{
+    width: 80px;border: none;
+    padding: 5px;background-color: teal;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;cursor: pointer;
+}
+.productBtn:hover{
+    background-color: #111;
+}
+.productTop{
+    display: flex;
+}
+.producttopleft,
+.producttopright{
+    flex: 1;
+    align-self: stretch;
+}
+.producttopright{
+    padding: 20px;margin: 20px;
+    box-shadow: 0 0 15px -10px rgba(0,0,0,0.765);
+
+}
+.productinoimg{
+    width: 40px;height: 40px;border-radius: 50%;
+    object-fit: cover;
+}
+.productInfoTop{
+    display: flex;align-items: center;
+}
+.productingoname{font-weight: 600;
+margin-left: 10px;}
+.productInfoBottom{
+    margin-top: 10px;
+
+}
+.productinfoitem{
+    width: 150px;
+    display: flex;justify-content: space-between;
+}
+.producinfovalue{
+    font-weight: 300;
+}
+.productBottom{
+    padding: 20px;margin: 20px;
+    box-shadow: 0 0 15px -10px rgba(0,0,0,0.765);
+
+}
+.ProductForm{
+    display: flex;
+    justify-content: space-between;
+
+}
+.productForleft{
+    display: flex;
+    flex-direction: column;
+
+}
+.productForleft>label{
+    margin-bottom: 10px;color: grey;
+}
+.productForleft>input{
+    margin-bottom: 10px;
+    border: none;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+    outline: none;
+}
+.productForleft>select{
+    margin-bottom: 10px;
+    padding: 5px;
+    outline: none;
+}
+.productimgUploader{
+    width: 120px!important;height: 120px!important;border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.productForright{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.productupload{
+    display: flex;
+    align-items: center;
+}
+.productUploadbtn{
+    border: none;
+    padding: 5px;border-radius: 5px;
+    background-color: darkblue;
+color: white;
+font-weight: 600;
+cursor: pointer;
+}
